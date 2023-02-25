@@ -18,7 +18,7 @@ const element = document.querySelector(".gallery");
 const arrayItem = [];
 
 images.forEach((el) => {
-  arrayItem.push(`<img src="${el.url}" alt="${el.alt}">`);
+  arrayItem.push(`<img src="${el.url}" alt="${el.alt}" width="650">`);
 });
 
 const item = arrayItem.join(" ");
