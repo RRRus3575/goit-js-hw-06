@@ -1,15 +1,13 @@
 const inputEl = document.querySelector("#validation-input");
 
 function validation(event) {
-  if (6 == event.currentTarget.value.length) {
-    event.target.style.border = "3px solid green";
+  if (inputEl.dataset.length == event.target.value.length) {
+    event.currentTarget.classList.remove("invalid");
+    event.currentTarget.classList.add("valid");
   } else {
-    event.target.style.border = "3px solid red";
+    event.currentTarget.classList.remove("valid");
+    event.currentTarget.classList.add("invalid");
   }
 }
-
-inputEl.addEventListener("focus", (event) => {
-  return (event.target.style.border = "3px solid black");
-});
 
 inputEl.addEventListener("blur", validation);
