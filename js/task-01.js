@@ -9,5 +9,5 @@ elements.forEach((el) => {
   const listEl = el.lastElementChild.children.length;
 
   console.log(`Category: `, title);
-  console.log(`Category: `, listEl);
+  console.log(`Elements: `, listEl);
 });
