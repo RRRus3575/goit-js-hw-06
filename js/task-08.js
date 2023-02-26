@@ -4,16 +4,16 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const formEl = event.currentTarget.elements;
-  const mail = formEl.email.value;
+  const email = formEl.email.value;
   const password = formEl.password.value;
 
-  if (mail === "" || password === "") {
+  if (email === "" || password === "") {
     window.alert("Мають бути заповнені всі поля");
     return;
   }
 
   const formData = {
-    mail,
+    email,
     password,
   };
 
