@@ -6,19 +6,19 @@ const buttonIncrement = document.querySelector(
 );
 const counterValue = document.querySelector("#value");
 
-const counter = function ({ step = 1, counterValue = 0 }) {
-  this.value = counterValue;
-  this.step = step;
-};
+// const counter = function ({ step = 1, counterValue = 0 }) {
+//   this.value = counterValue;
+//   this.step = step;
+// };
+let value = 0;
 
-counter.handleClickDecrement = () => {
+buttonDecrement.addEventListener("click", (value) => {
   console.log("buy");
   return (value -= 1);
-};
-counter.handleClickIncrement = () => {
-  // return (value += 1);
+});
+buttonIncrement.addEventListener("click", (value) => {
   console.log("buy");
-};
+  return (value += 1);
+});
 
-buttonDecrement.addEventListener("click", handleClickDecrement);
-buttonIncrement.addEventListener("click", handleClickIncrement);
+console.log(value);
