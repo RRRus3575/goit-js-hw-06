@@ -15,7 +15,7 @@ boxes.setAttribute(
 );
 
 function addBox() {
-  if (input.value < 1 || input >= 100) {
+  if (input.value < 1 || input > 100) {
     window.alert("Введіть, будь-ласка, число від 1 до 100");
   } else {
     let heightWidth = 30;
